@@ -1,0 +1,19 @@
+# dockeringnore file is where you hide a files that you dont want them in container
+# using .dockerignore will make our container/image building faster
+
+# so lets add some files
+
+# GIT 
+# we are adding .git and gitingore beacause .git stores all version control commits, file changes and more so, to reduce docker image size we hideit in dockerignore
+.git 
+.gitignore
+
+
+# env and .venv
+
+# .env have our secret values and .venv have our packages in it.
+# so to reduce size of our docker image we hide them in our dockerignore
+.env
+.venv
+venv
+
