@@ -1,0 +1,14 @@
+# adding volume to app service. so,all the file will be accessible to the /app directory 
+# in container dir, any changes we made will be added to /app docker dir.
+
+version: "3.9"
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: >
+      sh -c "python manage.py runserver 0.0.0.0:8000"
