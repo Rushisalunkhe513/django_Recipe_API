@@ -1,18 +1,7 @@
-# flake 8 is linting tool.
-"""
-what is linting?
-Linters are commonly used in software development to enforce coding standards, maintain code consistency, and improve code quality. 
-They can catch common programming errors, such as syntax errors, variable misuse, or undefined variables, early in the development process, 
-before the code is executed. Linting can also help identify potential performance issues, security vulnerabilities, or non-standard coding 
-practices that may lead to maintenance difficulties or bugs in the future.
-
-Basically they are used for keeping code standard and identifying basic bugs in our code beforehand.
-where flake8 is linting tool for applying linting.
-"""
-# all flake file should start with [flake8]
 [flake8]
 
-# this exclude will leave out files for checking.will not give any error from this files.
+max-line-length = 200
+
 exclude = 
     migration.py,
     setting.py,
